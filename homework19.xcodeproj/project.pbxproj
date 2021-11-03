@@ -13,6 +13,9 @@
 		88C151C32732E8FB00DC7563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C151C12732E8FB00DC7563 /* Main.storyboard */; };
 		88C151C52732E8FD00DC7563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C151C42732E8FD00DC7563 /* Assets.xcassets */; };
 		88C151C82732E8FD00DC7563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C151C62732E8FD00DC7563 /* LaunchScreen.storyboard */; };
+		88C151D02732E95700DC7563 /* TickleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C151CF2732E95700DC7563 /* TickleGestureRecognizer.swift */; };
+		88C151D52732ECBE00DC7563 /* laugh.caf in Resources */ = {isa = PBXBuildFile; fileRef = 88C151D32732ECBE00DC7563 /* laugh.caf */; };
+		88C151D62732ECBE00DC7563 /* chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = 88C151D42732ECBE00DC7563 /* chomp.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		88C151C42732E8FD00DC7563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88C151C72732E8FD00DC7563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88C151C92732E8FD00DC7563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88C151CF2732E95700DC7563 /* TickleGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickleGestureRecognizer.swift; sourceTree = "<group>"; };
+		88C151D32732ECBE00DC7563 /* laugh.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = laugh.caf; sourceTree = "<group>"; };
+		88C151D42732ECBE00DC7563 /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		88C151BA2732E8FB00DC7563 /* homework19 */ = {
 			isa = PBXGroup;
 			children = (
+				88C151D12732EC8300DC7563 /* Supporting Files */,
 				88C151BB2732E8FB00DC7563 /* AppDelegate.swift */,
 				88C151BD2732E8FB00DC7563 /* SceneDelegate.swift */,
 				88C151BF2732E8FB00DC7563 /* ViewController.swift */,
+				88C151CF2732E95700DC7563 /* TickleGestureRecognizer.swift */,
 				88C151C12732E8FB00DC7563 /* Main.storyboard */,
+			);
+			path = homework19;
+			sourceTree = "<group>";
+		};
+		88C151D12732EC8300DC7563 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88C151D22732ECA400DC7563 /* Audio */,
 				88C151C42732E8FD00DC7563 /* Assets.xcassets */,
 				88C151C62732E8FD00DC7563 /* LaunchScreen.storyboard */,
 				88C151C92732E8FD00DC7563 /* Info.plist */,
 			);
-			path = homework19;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88C151D22732ECA400DC7563 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				88C151D42732ECBE00DC7563 /* chomp.caf */,
+				88C151D32732ECBE00DC7563 /* laugh.caf */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +152,9 @@
 			files = (
 				88C151C82732E8FD00DC7563 /* LaunchScreen.storyboard in Resources */,
 				88C151C52732E8FD00DC7563 /* Assets.xcassets in Resources */,
+				88C151D52732ECBE00DC7563 /* laugh.caf in Resources */,
 				88C151C32732E8FB00DC7563 /* Main.storyboard in Resources */,
+				88C151D62732ECBE00DC7563 /* chomp.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +168,7 @@
 				88C151C02732E8FB00DC7563 /* ViewController.swift in Sources */,
 				88C151BC2732E8FB00DC7563 /* AppDelegate.swift in Sources */,
 				88C151BE2732E8FB00DC7563 /* SceneDelegate.swift in Sources */,
+				88C151D02732E95700DC7563 /* TickleGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = homework19/Info.plist;
+				INFOPLIST_FILE = "homework19/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = homework19/Info.plist;
+				INFOPLIST_FILE = "homework19/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
